@@ -45,7 +45,9 @@ app.use(function(req, res, next) {
 // ============================================================
 
 var artists = require('./routes/artists');
+var albums = require('./routes/albums');
 
 app.use('/api/artists', artists);
+app.use('/api/albums', albums);
 
 module.exports = app;
